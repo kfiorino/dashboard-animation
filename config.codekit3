@@ -51,6 +51,28 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
+	"/deploy/js/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/deploy/scripts-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/scripts-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/design/af2acbb1e2e40b25cd1f494bf6b9cd99.png": {
 		"ft": 32768,
 		"iS": 266182,
@@ -126,8 +148,8 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -154,8 +176,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -165,8 +187,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
