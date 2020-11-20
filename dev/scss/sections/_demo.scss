@@ -1,6 +1,6 @@
 #draw-svg-container{
     display: grid;
-    grid-template-columns: auto 50% auto;
+    grid-template-columns: auto 80% auto;
     grid-template-areas: ". draw .";
 
     >div{
@@ -8,5 +8,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      position: relative;
+
+      svg{
+        position: absolute;
+        top:0;
+        left:0;
+      }
+
+      #speedometer{ 
+       
+      }
     }
 }

@@ -62,63 +62,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/deploy/scripts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/deploy/scripts-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/design/af2acbb1e2e40b25cd1f494bf6b9cd99.png": {
-		"ft": 32768,
-		"iS": 266182,
-		"oA": 0,
-		"oAP": "/design/af2acbb1e2e40b25cd1f494bf6b9cd99.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/design/Patty Wagon Storyboard.png": {
-		"ft": 32768,
-		"iS": 985479,
-		"oA": 0,
-		"oAP": "/design/Patty Wagon Storyboard.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/design/SVG Assets.ai": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/design/SVG Assets.ai",
-		"oF": 0
-		},
-	"/design/SVGs.sketch": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/design/SVGs.sketch",
-		"oF": 0
-		},
-	"/dev/content/demo.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/content/demo.html",
-		"oF": 0
-		},
 	"/dev/content/demo.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -143,14 +86,6 @@
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
 		},
-	"/dev/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/index.html",
-		"oF": 2
-		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -158,6 +93,28 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 2
+		},
+	"/dev/js/burger-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/burger-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/burger.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/burger-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/demo.js": {
 		"bF": 0,
@@ -170,17 +127,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/scripts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/deploy/js/scripts-min-min.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
 	"/dev/js/scripts.js": {
 		"bF": 4,
 		"ft": 64,
@@ -189,6 +135,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/speed.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dev/js/speed-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

@@ -338,6 +338,9 @@ ul {
   .container-grid > div {
     grid-area: grid-content; }
 
+.hide {
+  display: none; }
+
 /* =============
     Typography
 ============= */
@@ -378,10 +381,15 @@ textarea {
 ============= */
 #draw-svg-container {
   display: grid;
-  grid-template-columns: auto 50% auto;
+  grid-template-columns: auto 80% auto;
   grid-template-areas: ". draw ."; }
   #draw-svg-container > div {
     grid-area: draw;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+    #draw-svg-container > div svg {
+      position: absolute;
+      top: 0;
+      left: 0; }
