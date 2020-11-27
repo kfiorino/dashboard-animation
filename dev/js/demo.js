@@ -17,7 +17,8 @@ export function drawAnimation(){
    drawTL.to("#outlines", {duration:1, scale: .3, x: 10, y:10}, "next")
    drawTL.to("#krusty-krab", {duration:1, scale: .3, x: 22, y:22}, "next");
    
-   drawTL.from("#boundary-lines", {duration:1, alpha: 0}, "third")
+   drawTL.from("#boundary1", {duration:1, drawSVG: "0%"}, "third")
+   drawTL.from("#boundary2", {duration:1, drawSVG: "0%"}, "third")
    drawTL.from("#time-background", {duration:.25, alpha: 0}, "forth")
    drawTL.from("#fill-five", {duration:.25, alpha: 0}, "fifth")
    drawTL.from("#fill-seven", {duration:.25, alpha: 0}, "sixth")
@@ -37,9 +38,9 @@ export function drawAnimation(){
    drawTL.from("#backwards", {duration:1, y:-200}, "nineteen");
 
    drawTL.from("#music-background", {duration:.25, alpha: 0}, "twenty")
-   drawTL.from("#note", {duration:2, alpha: 0, x:300}, "twentyone")
-   drawTL.from("#song", {duration:2, alpha: 0, x:-10}, "twentytwo")
-   drawTL.from("#play-button", {duration:2, alpha: -5}, "twentytwo")
+   drawTL.from("#note", {duration:1, alpha: 0}, "twentyone")
+   drawTL.from("#song", {duration:1, alpha: 0, x:20}, "twentytwo")
+   drawTL.from("#play-button", {duration:1, alpha: 0}, "twentytwoo")
    
 
    drawTL.from("#bottom-bun", {duration:1, y:-1000}, "twentythree")
@@ -62,6 +63,17 @@ export function drawAnimation(){
 
    drawTL.from("#gas-guage", {duration:1, y:1000}, "twentyseven");
    drawTL.to("#fill-gas", {duration:1, scaleY: -15}, "twentyeight");
+
+   drawTL.to("#stop-fill", {duration:1, alpha:0}, "twentynine");
+   drawTL.to("#outline-stop", {duration:1, alpha:0}, "twentynine");
+
+   drawTL.to("#s", {duration:1, fill: 858585}, "twentynine");
+   drawTL.to("#t", {duration:1, fill: 858585}, "twentynine");
+   drawTL.to("#o", {duration:1, fill: 858585}, "twentynine");
+   drawTL.to("#p", {duration:1, fill: 858585}, "twentynine");
+
+   drawTL.from("#forward-background", {duration:1,alpha:0}, "thirtyone");
+
    
    
 
