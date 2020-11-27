@@ -17,5 +17,3 @@ mainTL.add(drawAnimation());
 
 GSDevTools.create();
 
-const morphTL = gsap.timeline()
-morphTL.add(drawAnimation());
