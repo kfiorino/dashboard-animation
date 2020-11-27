@@ -61,6 +61,8 @@ export function drawAnimation(){
    drawTL.from("#speed-fill", {duration:.5, alpha:0}, "twentysix");
 
    drawTL.from("#gas-guage", {duration:1, y:1000}, "twentyseven");
+   drawTL.to("#fill-gas", {duration:1, scaleY: -15}, "twentyeight");
+   
    
 
     return drawTL;
