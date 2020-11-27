@@ -42,15 +42,16 @@ export function drawAnimation(){
    drawTL.from("#play-button", {duration:2, alpha: -5}, "twentytwo")
    
 
-   drawTL.from("#bottom-bun", {duration:1, y:-1000}, "twentythree")
-   drawTL.from("#burger", {y:-1000})
-   drawTL.from("#cheese", {y:-1000})
-   drawTL.from("#lettuce", {y:-1000})
-   drawTL.from("#top-bun", {y:-1000});
+   drawTL.from("#bottom-bun", {duration:1, y:-1000, ease: "circ"}, "twentythree")
+   drawTL.from("#burger", {duration:.5, y:-1000, ease: "circ"})
+   drawTL.from("#cheese", {duration:.5, y:-1000, ease: "circ"})
+   drawTL.from("#lettuce", {duration:.5, y:-1000, ease: "circ"})
+   drawTL.from("#top-bun", {duration:1, y:-1000, ease: "circ"});
 
    drawTL.from("#white-overlay", {duration:1, alpha:0}, "twentyfour");
    drawTL.from("#dashes", {duration:1, alpha:0}, "twentyfive");
-   drawTL.from("#zeromph", {duration:.5, alpha:0}, "twentysix");
+   drawTL.from("#increase", {duration:1, alpha:0}, "twentyfive");
+   drawTL.from("#zero", {duration:.5, alpha:0}, "twentysix");
    drawTL.from("#twentymph", {duration:.5, alpha:0}, "twentysix");
    drawTL.from("#fortymph", {duration:.5, alpha:0}, "twentysix");
    drawTL.from("#sixtymph", {duration:.5, alpha:0}, "twentysix");
@@ -61,7 +62,21 @@ export function drawAnimation(){
    drawTL.from("#speed-fill", {duration:.5, alpha:0}, "twentysix");
 
    drawTL.from("#gas-guage", {duration:1, y:1000}, "twentyseven");
+   drawTL.to("#fill-gas", {duration:1, scaleY: -15}, "twentyeight");
    
-
     return drawTL;
 } 
+
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
+gsap.registerPlugin(MorphSVGPlugin);
+
+const morphTL = gsap.timeline();
+
+export function drawAnimation(){
+
+    morphTl.from("#speed-fill", {duration:2, morphSVG: "#outer"});  
+
+return morphTL;
+
+}
