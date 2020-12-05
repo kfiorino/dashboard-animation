@@ -6,13 +6,13 @@ gsap.registerPlugin(DrawSVGPlugin);
 const drawTL = gsap.timeline();
 export function drawAnimation(){
 
-   drawTL.from("#outline", {duration:3, drawSVG: "0%"}, "start")
-   drawTL.from("#bottom-line", {duration:3, drawSVG: "0%"}, "start" )
-   drawTL.from("#shell-line1", {duration:3, drawSVG: "0%"}, "start")
-   drawTL.from("#shell-line2", {duration:3, drawSVG: "0%"}, "start")
-   drawTL.from("#mid-line", {duration:3, drawSVG: "0%"}, "start")
-   drawTL.from("#underline", {duration:3, drawSVG: "0%"}, "start")
-   drawTL.from("#krusty-krab", {duration:3, alpha: 0}, "start");
+   drawTL.from("#outline", {duration:2, drawSVG: "0%"}, "start")
+   drawTL.from("#bottom-line", {duration:2, drawSVG: "0%"}, "start" )
+   drawTL.from("#shell-line1", {duration:2, drawSVG: "0%"}, "start")
+   drawTL.from("#shell-line2", {duration:2, drawSVG: "0%"}, "start")
+   drawTL.from("#mid-line", {duration:2, drawSVG: "0%"}, "start")
+   drawTL.from("#underline", {duration:2, drawSVG: "0%"}, "start")
+   drawTL.from("#krusty-krab", {duration:2, alpha: 0}, "start");
 
    drawTL.to("#outlines", {duration:1, scale: .3, x: 10, y:10}, "next")
    drawTL.to("#krusty-krab", {duration:1, scale: .3, x: 22, y:22}, "next");
@@ -20,27 +20,28 @@ export function drawAnimation(){
    drawTL.from("#boundary1", {duration:1, drawSVG: "0%"}, "third")
    drawTL.from("#boundary2", {duration:1, drawSVG: "0%"}, "third")
    drawTL.from("#time-background", {duration:.25, alpha: 0}, "forth")
-   drawTL.from("#fill-five", {duration:.25, alpha: 0}, "fifth")
-   drawTL.from("#fill-seven", {duration:.25, alpha: 0}, "sixth")
-   drawTL.from("#fill-nine", {duration:.25, alpha: 0}, "seventh")
-   drawTL.from("#fill-eleven", {duration:.25, alpha: 0}, "eighth");
-   drawTL.from("#fill-thirteen", {duration:.25, alpha: 0}, "ninth");
-   drawTL.from("#fill-fifteen", {duration:.25, alpha: 0}, "ten");
-   drawTL.from("#fill-seventeen", {duration:.25, alpha: 0}, "eleven");
-   drawTL.from("#sun", {duration:.25, alpha: 0}, "twelve");
-   drawTL.from("#fill-twenty", {duration:.25, alpha: 0}, "thirteen");
-   drawTL.from("#fill-twentyone", {duration:.25, alpha: 0}, "fourteen");
-   drawTL.from("#degrees", {duration:.25, alpha: 0}, "fifteen");
-   drawTL.from("#f", {duration:.25, alpha: 0}, "sixteen");
+   drawTL.from("#fill-five", {duration:.15, alpha: 0}, "fifth")
+   drawTL.from("#fill-seven", {duration:.15, alpha: 0}, "sixth")
+   drawTL.from("#fill-nine", {duration:.15, alpha: 0}, "seventh")
+   drawTL.from("#fill-eleven", {duration:.15, alpha: 0}, "eighth");
+   drawTL.from("#fill-thirteen", {duration:.15, alpha: 0}, "ninth");
+   drawTL.from("#fill-fifteen", {duration:.15, alpha: 0}, "ten");
+   drawTL.from("#fill-seventeen", {duration:.15, alpha: 0}, "eleven");
+   drawTL.from("#sun", {duration: 1, alpha: 0, rotation: 360}, "twelve");
 
-   drawTL.from("#forwards", {duration:1, y:-200}, "seventeen");
-   drawTL.from("#stop", {duration:1, y:-200}, "eighteen");
-   drawTL.from("#backwards", {duration:1, y:-200}, "nineteen");
+   drawTL.from("#fill-twenty", {duration:.15, alpha: 0}, "thirteen");
+   drawTL.from("#fill-twentyone", {duration:.15, alpha: 0}, "fourteen");
+   drawTL.from("#degrees", {duration:.15, alpha: 0}, "fifteen");
+   drawTL.from("#f", {duration:.15, alpha: 0}, "sixteen");
 
-   drawTL.from("#music-background", {duration:.25, alpha: 0}, "twenty")
-   drawTL.from("#note", {duration:1, alpha: 0}, "twentyone")
-   drawTL.from("#song", {duration:1, alpha: 0, x:20}, "twentytwo")
-   drawTL.from("#play-button", {duration:1, alpha: 0}, "twentytwoo")
+   drawTL.from("#forwards", {duration:.5, y:-200}, "seventeen");
+   drawTL.from("#stop", {duration:.5, y:-200}, "eighteen");
+   drawTL.from("#backwards", {duration:.5, y:-200}, "nineteen");
+
+   drawTL.from("#music-background", {duration:.15, alpha: 0}, "twenty")
+   drawTL.from("#note", {duration:.5, alpha: 0}, "twentyone")
+   drawTL.from("#song", {duration:.5, alpha: 0, x:20}, "twentytwo")
+   drawTL.from("#play-button", {duration:.5, alpha: 0}, "twentytwoo")
    
 
    drawTL.from("#bottom-bun", {duration:1, y:-1000}, "twentythree")
@@ -59,22 +60,21 @@ export function drawAnimation(){
    drawTL.from("#one-hundredmph", {duration:.5, alpha:0}, "twentysix");
    drawTL.from("#one-twentymph", {duration:.5, alpha:0}, "twentysix");
    drawTL.from("#one-fortymph", {duration:.5, alpha:0}, "twentysix");
-   drawTL.from("#speed-fill", {duration:.5, alpha:0}, "twentysix");
 
    drawTL.from("#gas-guage", {duration:1, y:1000}, "twentyseven");
    drawTL.to("#fill-gas", {duration:1, scaleY: -15}, "twentyeight");
 
-   drawTL.to("#stop-fill", {duration:1, alpha:0}, "twentynine");
-   drawTL.to("#outline-stop", {duration:1, alpha:0}, "twentynine");
+   drawTL.to("#stop-fill", {duration:.5, alpha:0}, "twentynine");
+   drawTL.to("#outline-stop", {duration:.5, alpha:0}, "twentynine");
 
-   drawTL.to("#s", {duration:1, fill: 858585}, "twentynine");
-   drawTL.to("#t", {duration:1, fill: 858585}, "twentynine");
-   drawTL.to("#o", {duration:1, fill: 858585}, "twentynine");
-   drawTL.to("#p", {duration:1, fill: 858585}, "twentynine");
+   drawTL.to("#s", {duration:.5, fill: 858585}, "twentynine");
+   drawTL.to("#t", {duration:.5, fill: 858585}, "twentynine");
+   drawTL.to("#o", {duration:.5, fill: 858585}, "twentynine");
+   drawTL.to("#p", {duration:.5, fill: 858585}, "twentynine");
 
    drawTL.from("#forward-background", {duration:1,alpha:0}, "thirtyone");
 
-   
+   drawTL.from("#speed-fill", {duration:2, drawSVG: "-100"}, "thirtytwo")
    
 
     return drawTL;
