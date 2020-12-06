@@ -34,6 +34,8 @@ export function drawAnimation(){
    drawTL.from("#degrees", {duration:.15, alpha: 0}, "fifteen");
    drawTL.from("#f", {duration:.15, alpha: 0}, "sixteen");
 
+   drawTL.from("#flower1", {duration:1, alpha: 0, x: -200, rotate:60, scale:10}, "sixteen")
+
    drawTL.from("#forwards", {duration:.5, y:-200}, "seventeen");
    drawTL.from("#stop", {duration:.5, y:-200}, "eighteen");
    drawTL.from("#backwards", {duration:.5, y:-200}, "nineteen");
@@ -42,13 +44,15 @@ export function drawAnimation(){
    drawTL.from("#note", {duration:.5, alpha: 0}, "twentyone")
    drawTL.from("#song", {duration:.5, alpha: 0, x:20}, "twentytwo")
    drawTL.from("#play-button", {duration:.5, alpha: 0}, "twentytwoo")
+
+   drawTL.from("#flower-2", {duration:1, alpha: 0, x: 200, rotate:60, scale:10}, "twentythreee")
    
 
-   drawTL.from("#bottom-bun", {duration:1, y:-1000}, "twentythree")
-   drawTL.from("#burger", {y:-1000})
-   drawTL.from("#cheese", {y:-1000})
-   drawTL.from("#lettuce", {y:-1000})
-   drawTL.from("#top-bun", {y:-1000});
+   drawTL.from("#bottom-bun", {duration:.5, y:-1000, ease:"back"}, "twentythree")
+   drawTL.from("#burger", {y:-1000, ease:"back"})
+   drawTL.from("#cheese", {y:-1000, ease:"back"})
+   drawTL.from("#lettuce", {y:-1000, ease:"back"})
+   drawTL.from("#top-bun", {y:-1000, ease:"back"});
 
    drawTL.from("#white-overlay", {duration:1, alpha:0}, "twentyfour");
    drawTL.from("#dashes", {duration:1, alpha:0}, "twentyfive");
@@ -63,6 +67,11 @@ export function drawAnimation(){
 
    drawTL.from("#gas-guage", {duration:1, y:1000}, "twentyseven");
    drawTL.to("#fill-gas", {duration:1, scaleY: -15}, "twentyeight");
+   drawTL.from("#bubble1", {duration:.5, alpha:0, y:10}, "twentyeightt");
+   drawTL.from("#bubble2", {duration:.5, alpha:0, y:10}, "twentyeighttt");
+   drawTL.from("#bubble3", {duration:.5, alpha:0, y:10}, "twentyeightttt");
+   drawTL.from("#bubble4", {duration:.5, alpha:0, y:10}, "twentyeighttttt");
+   drawTL.from("#bubble5", {duration:.5, alpha:0, y:10}, "twentyeightttttt");
 
    drawTL.to("#stop-fill", {duration:.5, alpha:0}, "twentynine");
    drawTL.to("#outline-stop", {duration:.5, alpha:0}, "twentynine");
